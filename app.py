@@ -31,7 +31,7 @@ def index():
 
         try:
             f.save(filename)
-            return render_template('form.html', filename=secure_filename(f.filename), notif='Uploaded Success')
+            return render_template('form.html', filename=secure_filename(f.filename), notif='Upload Success')
         except:
             return render_template('upload_gagal.html')
     return render_template('form.html')
