@@ -39,7 +39,7 @@ def index():
 @application.route('/stream', methods=['GET', 'POST'])
 def stream():
     if request.method == 'POST':
-        return render_template('index.html')
+        return render_template('streaming.html')
     return render_template('upload_gagal.html')
 
 @application.route('/video_feed')
